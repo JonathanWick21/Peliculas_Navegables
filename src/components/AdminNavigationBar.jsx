@@ -3,7 +3,7 @@ import Header from "./Header.jsx";
 import { useState } from "react";
 
 
-function NavigationBar() {
+function AdminNavigationBar() {
     const [open, setOpen] = useState(false);
     return (
         <>
@@ -23,6 +23,7 @@ function NavigationBar() {
                         <NavLink to="/" onClick={() => setOpen(false)} aria-label="Inicio">Inicio</NavLink>
                         <NavLink to="/peliculas" onClick={() => setOpen(false)} aria-label="Películas">Películas</NavLink>
                         <NavLink to="/interpretes" onClick={() => setOpen(false)} aria-label="Intérpretes">Intérpretes</NavLink>
+                        <NavLink to="/admin" onClick={() => setOpen(false)} aria-label="Panel de administración">Admin</NavLink>
 
                     </div>
                 </nav>
@@ -33,4 +34,4 @@ function NavigationBar() {
     );
 }
 
-export default NavigationBar;
+export default AdminNavigationBar;
